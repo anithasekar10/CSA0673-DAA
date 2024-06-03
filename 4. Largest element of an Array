@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+   int array[10] = {1, 2, 3, 0,  6, 7, 5, 4, 10, 9};
+   int i, largest;
+   largest = array[0]; 
+   for(i = 1; i < 10; i++) 
+   {
+      if( largest < array[i] ) 
+         largest = array[i];
+   }
+   printf("Largest element of array is %d", largest);      
+   return 0;
+}
